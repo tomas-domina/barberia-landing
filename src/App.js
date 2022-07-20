@@ -1,4 +1,5 @@
 import "./App.css";
+import Inicio from "./components/Inicio";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       </header>
 
       <main>
-        <h1>Hola</h1>
+        <Inicio title1={"Contratá nuestra"} title2={"Membresía"} />
       </main>
     </div>
   );
