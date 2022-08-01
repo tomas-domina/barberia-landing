@@ -7,6 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'ShadedLarch';
+  src:
+    url('./fonts/ShadedLarch/ShadedLarch_PERSONAL_USE.ttf') format('truetype');
+  
+}
+
+@font-face {
+  font-family: 'MuseoSlab';
+  src: url("./fonts/MuseoSlab/MuseoSlab/Museo_Slab_700.otf") format('truetype');
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

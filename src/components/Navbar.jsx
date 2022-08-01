@@ -43,12 +43,13 @@ const NavContainer = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60rem;
+    margin-left: 57rem;
     margin-right: auto;
     text-align: center;
+    font-family: MuseoSlab;
     a {
       color: white;
-      font-size: 1.15rem;
+      font-size: 1rem;
       display: block;
     }
   }
