@@ -36,14 +36,14 @@ const NavContainer = styled.nav`
   a {
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .links {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 57rem;
+    margin-left: 53rem;
     margin-right: auto;
     text-align: center;
     font-family: MuseoSlab;
@@ -51,24 +51,7 @@ const NavContainer = styled.nav`
       color: white;
       font-size: 1rem;
       display: block;
-    }
-  }
-
-  .links.active {
-    width: 100%;
-    display: block;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 30%;
-    left: 0;
-    right: 0;
-    text-align: center;
-
-    a {
-      font-size: 2rem;
-      margin-top: 1rem;
-      color: white;
+      padding: 5px;
     }
   }
 `;
