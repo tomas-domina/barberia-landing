@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import banner from "../images/img-banner.png";
-import background1 from "../images/fondo-1.png";
 
 const Inicio = ({ title1, title2 }) => {
   return (
