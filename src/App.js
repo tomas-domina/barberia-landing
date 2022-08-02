@@ -1,6 +1,7 @@
 import "./App.css";
 import Inicio from "./components/Inicio";
 import Navbar from "./components/Navbar";
+import Servicios from "./components/Servicios";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <main>
         <Inicio title1={"Contratá nuestra"} title2={"Membresía"} />
+        <Servicios />
       </main>
     </div>
   );
