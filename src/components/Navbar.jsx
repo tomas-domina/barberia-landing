@@ -50,45 +50,12 @@ const NavContainer = styled.nav`
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
-<<<<<<< HEAD
-    margin-right: 1rem;
-=======
->>>>>>> navbar
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    margin-left: 57rem;
-    margin-right: auto;
-    text-align: center;
-    font-family: MuseoSlab;
-    a {
-      color: white;
-      font-size: 1rem;
-      display: block;
-    }
-  }
-
-  .links.active {
-    width: 100%;
-    display: block;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 30%;
-    left: 0;
-    right: 0;
-    text-align: center;
-
-    a {
-      font-size: 2rem;
-      margin-top: 1rem;
-      color: white;
-    }
-=======
     padding: 30px 10%;
   }
 
@@ -108,6 +75,5 @@ const NavContainer = styled.nav`
   }
   .nav-links li a:hover {
     color: #ae862a;
->>>>>>> navbar
   }
 `;
