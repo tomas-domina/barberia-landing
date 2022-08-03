@@ -6,12 +6,14 @@ import Servicios from "./components/Servicios";
 function App() {
   return (
     <div className="App">
-      <div className="background">
+      <header>
         <Navbar />
+      </header>
+      <main>
         <Inicio title1={"Contratá nuestra"} title2={"Membresía"} />
-      </div>
 
-      <Servicios />
+        <Servicios />
+      </main>
     </div>
   );
 }

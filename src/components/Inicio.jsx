@@ -26,7 +26,8 @@ const TilteContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 600px;
+  max-height: 100%;
+  max-width: 100%;
   h1,
   h4 {
     color: white;
