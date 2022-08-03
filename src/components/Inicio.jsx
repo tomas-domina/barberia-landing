@@ -28,16 +28,15 @@ const TilteContainer = styled.div`
   background-color: black;
   max-height: 100%;
   max-width: 100%;
-  h1,
-  h4 {
-    color: white;
-  }
-
   background-image: url(${banner});
   background-repeat: no-repeat;
   background-size: 60rem;
   background-position: 100% 70%;
   height: 600px;
+  h1,
+  h4 {
+    color: white;
+  }
 
   .title1,
   .title2 {
