@@ -43,9 +43,17 @@ const ServicesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 100%;
+  max-width: 100%;
   background-image: url(${bgImage2});
   background-repeat: no-repeat;
   background-size: 100rem;
+  background-position: 50% 70%;
+
+  @media (min-width: 3072px) {
+    background-size: 192rem;
+  }
+
   heigth: 600px;
   img {
     height: 300px;
