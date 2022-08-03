@@ -33,10 +33,13 @@ const TilteContainer = styled.div`
     color: white;
   }
 
+  .container {
+  }
+
   background-image: url(${banner});
   background-repeat: no-repeat;
   background-size: 60rem;
-  background-position: 100% 70%;
+  background-position: 60% 70%;
   height: 600px;
 
   .title1,
