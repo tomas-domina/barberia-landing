@@ -3,6 +3,7 @@ import Inicio from "./components/Inicio";
 import Membresia from "./components/Membresia";
 import Navbar from "./components/Navbar";
 import Nosotros from "./components/Nosotros";
+import Reserva from "./components/Reserva";
 import Servicios from "./components/Servicios";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Servicios />
         <Nosotros />
         <Membresia />
+        <Reserva />
       </main>
     </div>
   );
