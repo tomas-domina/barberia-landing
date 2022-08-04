@@ -31,8 +31,9 @@ const Nosotros = () => {
 export default Nosotros;
 
 const NosContainer = styled.div`
-  max-height: 100%;
+  max-height: 45rem;
   max-width: 100%;
+  padding: 0;
   background-image: url(${bgImage3});
   background-repeat: no-repeat;
   background-size: 100rem;
@@ -52,19 +53,13 @@ const NosContainer = styled.div`
   }
 
   img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    width: 450px;
+    padding: 50px;
+    max-height: 500px;
   }
 
   h4,
   h1 {
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   h4 {
@@ -87,15 +82,13 @@ const NosContainer = styled.div`
     color: white;
     font-weight: 300;
     font-size: 25px;
-    margin-bottom: 425px;
+    margin-bottom: 25px;
   }
 
   .text-container {
     margin-left: 70px;
-    margin-top: 250px;
-  }
-  .title-container {
-    margin-bottom: 45px;
+    margin-top: 150px;
     margin-right: 100px;
+    margin-bottom: 275px;
   }
 `;
