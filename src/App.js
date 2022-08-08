@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Nosotros from "./components/Nosotros";
 import Reserva from "./components/Reserva";
 import Servicios from "./components/Servicios";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Nosotros />
         <Membresia />
         <Reserva />
+        <Form />
       </main>
     </div>
   );
