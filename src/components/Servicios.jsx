@@ -15,18 +15,21 @@ const Servicios = () => {
       <div className="container">
         <div className="img-container">
           <img src={corteImg} alt="corte" />
+          <div className="texto-encima-corte">Corte</div>
           <p>
             Lorem ipsum dolor sit <br /> amet consectetur adi-
           </p>
         </div>
         <div className="img-container">
           <img src={afeitadoImg} alt="afeitado" />
+          <div className="texto-encima-afeitado">Afeitado</div>
           <p>
             Lorem ipsum dolor sit <br /> amet consectetur adi-
           </p>
         </div>
         <div className="img-container">
           <img src={corteAfeitadoImg} alt="corte-y-afeitado" />
+          <div className="texto-encima-ambos">Ambos</div>
           <p>
             Lorem ipsum dolor sit <br /> amet consectetur adi-
           </p>
@@ -104,5 +107,36 @@ const ServicesContainer = styled.div`
 
   .img-container {
     padding: 30px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .texto-encima-corte {
+    font-family: ShadedLarch;
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: 140px;
+    left: 90px;
+    transform: rotate(-10deg);
+  }
+  .texto-encima-afeitado {
+    font-family: ShadedLarch;
+    color: white;
+    font-size: 75px;
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    transform: rotate(-10deg);
+  }
+  .texto-encima-ambos {
+    font-family: ShadedLarch;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 140px;
+    left: 95px;
+    transform: rotate(-10deg);
   }
 `;

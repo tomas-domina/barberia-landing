@@ -10,18 +10,15 @@ import Form from "./components/Form";
 function App() {
   return (
     <div className="App">
-      <header>
+      <div className="fondo1">
         <Navbar />
-      </header>
-      <main>
         <Inicio title1={"Contratá nuestra"} title2={"Membresía"} />
-
-        <Servicios />
-        <Nosotros />
-        <Membresia />
-        <Reserva />
-        <Form />
-      </main>
+      </div>
+      <Servicios />
+      <Nosotros />
+      <Membresia />
+      <Reserva />
+      <Form />
     </div>
   );
 }

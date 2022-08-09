@@ -1,18 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import banner from "../images/img-banner.png";
+import button from "../images/Boton.png";
+import bgImage1 from "../images/fondo-1.png";
 
 const Inicio = ({ title1, title2 }) => {
   return (
     <TilteContainer>
       <div className="container">
-        <h4 className="title1">{title1}</h4>
-        <h1 className="title2">{title2}</h1>
-        <button className="btn">
-          <a className="btn-link" href="#">
-            Obtener
-          </a>
-        </button>
+        <div>
+          <h4 className="title1">{title1}</h4>
+          <h1 className="title2">{title2}</h1>
+          <img className="banner" src={banner} alt="banner" />
+        </div>
+
+        <a href="">
+          <img className="button" src={button} alt="button" />
+          <div className="texto-encima">Obtener</div>
+        </a>
       </div>
     </TilteContainer>
   );
@@ -28,23 +33,30 @@ const TilteContainer = styled.div`
   background-color: black;
   max-height: 100%;
   max-width: 100%;
-  background-image: url(${banner});
+  background-image: url(${bgImage1});
   background-repeat: no-repeat;
-  background-size: 60rem;
-  background-position: 60% 70%;
+  background-size: 100rem;
+  background-position: 50% 70%;
   height: 600px;
   h1,
   h4 {
     color: white;
   }
+  .banner {
+    display: block;
+    height: 450px;
+    margin-left: 300px;
+    margin-bottom: 300px;
+  }
 
   .title1,
   .title2 {
-    margin: 0 auto;
     margin-right: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 400px;
+    margin-bottom: -175px;
   }
 
   .title1 {
@@ -52,6 +64,8 @@ const TilteContainer = styled.div`
     font-weight: 300;
     font-size: 1.5rem;
     margin-right: 66rem;
+    margin-top: 400px;
+    margin-bottom: -400px;
   }
   .title2 {
     font-family: ShadedLarch;
@@ -59,21 +73,25 @@ const TilteContainer = styled.div`
     font-weight: 300;
   }
 
-  .btn {
-    margin-right: 830px;
-    margin-top: 20px;
-    height: 60px;
-    width: 170px;
-    background-color: #ae862a;
-    color: white;
-    font-family: MuseoSlab;
-    font-size: 22px;
-
-    border: solid 1px #ae862a;
+  .container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
   }
 
-  .btn-link {
-    text-decoration: none;
+  .texto-encima {
+    font-family: MuseoSlab;
     color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 518px;
+    left: 43px;
+  }
+  .button {
+    height: 95px;
+    margin-bottom: 500px;
+    margin-top: -700px;
+    margin-right: 900px;
+    margin-left: -120px;
   }
 `;

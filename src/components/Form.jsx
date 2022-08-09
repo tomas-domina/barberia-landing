@@ -23,7 +23,12 @@ const Form = () => {
           ></textarea>
           <br />
         </form>
-        <img className="button" src={button} alt="enviar" />
+        <div className="button-container">
+          <a href="">
+            <img className="button" src={button} alt="enviar" />
+            <div className="texto-encima">Enviar</div>
+          </a>
+        </div>
       </div>
       <div>
         <div className="ig">
@@ -142,5 +147,20 @@ const FormContainer = styled.div`
   .location-icon {
     height: 50px;
     margin-top: 5px;
+  }
+
+  .button-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .texto-encima {
+    font-family: MuseoSlab;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 16px;
+    left: 36.5px;
   }
 `;

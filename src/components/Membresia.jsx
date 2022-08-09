@@ -11,8 +11,11 @@ const Membresia = () => {
         <h4>Contratá nuestra</h4>
         <h1>Membresía</h1>
       </div>
-      <div>
-        <img src={button} alt="obtener" />
+      <div className="button-container">
+        <a href="">
+          <img src={button} alt="obtener" />
+          <div className="texto-encima">Obtener</div>
+        </a>
       </div>
     </MembresiaContainer>
   );
@@ -71,5 +74,18 @@ const MembresiaContainer = styled.div`
   .text-container {
     margin-top: 175px;
     // margin-left: 1350px;
+  }
+  .button-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .texto-encima {
+    font-family: MuseoSlab;
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    top: 38px;
+    left: 320px;
   }
 `;
