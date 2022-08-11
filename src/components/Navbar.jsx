@@ -20,7 +20,7 @@ const Navbar = () => {
               <a href="#nosotros">Nosotros</a>
             </li>
             <li>
-              <a href="#turnos y membresias">
+              <a href="#turnos-y-membresias">
                 Turnos y <br /> Membresias
               </a>
             </li>
@@ -40,8 +40,10 @@ const NavContainer = styled.nav`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #1e1d1c;
+  width: 100vw;
   height: 120px;
+  position: absolute;
+  z-index: 1;
 
   li,
   a {

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import banner from "../images/img-banner.png";
 import button from "../images/Boton.png";
 import bgImage1 from "../images/fondo-1.png";
@@ -30,7 +31,7 @@ const TilteContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+
   max-height: 100%;
   max-width: 100%;
   background-image: url(${bgImage1});
@@ -38,12 +39,12 @@ const TilteContainer = styled.div`
   background-size: 100rem;
   background-position: 50% 70%;
   height: 600px;
-  h1,
-  h4 {
-    color: white;
+
+  @media (min-width: 3072px) {
+    background-size: 192rem;
   }
+
   .banner {
-    display: block;
     height: 450px;
     margin-left: 300px;
     margin-bottom: 300px;
@@ -51,6 +52,7 @@ const TilteContainer = styled.div`
 
   .title1,
   .title2 {
+    color: white;
     margin-right: 1000px;
     display: flex;
     justify-content: center;

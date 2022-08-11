@@ -36,11 +36,7 @@ const Form = () => {
           <img className="ig-icon" src={igIcon} alt="instagram" />
         </div>
         <hr />
-        <div className="tel">
-          <img className="tel-icon" src={telIcon} alt="tel" />
-          <h3>0341 343-7234</h3>
-        </div>
-        <hr />
+
         <div className="location">
           <img className="location-icon" src={pinIcon} alt="location" />
           <p>
