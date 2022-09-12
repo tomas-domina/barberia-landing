@@ -1,48 +1,69 @@
 import React from "react";
 import styled from "styled-components";
 
-import button from "../images/Boton.png";
-import igIcon from "../images/icon-ig.png";
-import telIcon from "../images/icon-tel.png";
-import pinIcon from "../images/icon-pin.png";
+import button from "../../../images/Boton.png";
+import igIcon from "../../../images/icon-ig.png";
+
+import pinIcon from "../../../images/icon-pin.png";
 
 const Form = () => {
   return (
-    <FormContainer>
+    <FormContainer id="contacto">
       <div className="main-form">
-        <h1>Contactanos</h1>
-        <form action="">
-          <input type="text" placeholder="Nombre" name="" id="" />
+        <h1 className="contactanos">Contactanos</h1>
+        <form>
+          <input
+            className="inputForm"
+            type="text"
+            placeholder="Nombre"
+            id="name"
+            required
+          />
           <br />
-          <input type="email" name="" id="" placeholder="Mail" />
+          <input
+            className="inputForm"
+            type="email"
+            id="email"
+            placeholder="Mail"
+            required
+          />
           <br />
           <textarea
-            id="exampleFormControlTextarea1"
-            rows="3"
-            placeholder="   Mensaje"
+            className="inputForm"
+            id="message"
+            rows="4"
+            placeholder="Mensaje"
           ></textarea>
           <br />
+
+          <button type="submit" className="button-container">
+            <img className="buttonForm" src={button} alt="enviar" />
+            <div className="texto-encimaForm">Enviar</div>
+          </button>
         </form>
-        <div className="button-container">
-          <a href="">
-            <img className="button" src={button} alt="enviar" />
-            <div className="texto-encima">Enviar</div>
-          </a>
-        </div>
       </div>
+
       <div>
-        <div className="ig">
-          <h2>Seguinos en redes</h2>
+        <a
+          className="ig"
+          href="https://www.instagram.com/barberia.adiosnonino/?hl=es-la"
+          target="_blank"
+        >
+          <h2 className="seguinos">Seguinos en redes</h2>
           <img className="ig-icon" src={igIcon} alt="instagram" />
-        </div>
+        </a>
         <hr />
 
-        <div className="location">
+        <a
+          className="location"
+          href="https://goo.gl/maps/R1pSweBqsoZBs3vX9"
+          target="_blank"
+        >
           <img className="location-icon" src={pinIcon} alt="location" />
-          <p>
+          <p className="adress">
             3 de Febrero 2489, <br /> S2000 Rosario, Santa Fe
           </p>
-        </div>
+        </a>
       </div>
     </FormContainer>
   );
@@ -61,14 +82,26 @@ const FormContainer = styled.div`
   max-width: 100%;
   background-color: #434240;
 
-  h1 {
+  @media (max-width: 768px) {
+    max-heigth: 100%;
+    width: 768px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .contactanos {
     font-family: ShadedLarch;
     font-size: 3.5rem;
     font-weight: 300;
     color: #775000;
     margin-top: 20px;
+
+    @media (max-width: 768px) {
+      margin-left: 80px;
+      font-size: 3rem;
+    }
   }
-  h2 {
+  .seguinos {
     font-family: MuseoSlab;
     font-weight: 300;
     font-size: 1.75rem;
@@ -80,7 +113,7 @@ const FormContainer = styled.div`
     font-weight: 300;
     font-size: 1.75rem;
   }
-  p {
+  .adress {
     color: white;
     font-family: MuseoSlab;
     font-weight: 300;
@@ -92,15 +125,20 @@ const FormContainer = styled.div`
     flex-direction: column;
   }
 
-  input {
+  .inputForm {
     padding: 10px;
     font-family: MuseoSlab;
+    border: none;
+
+    @media (max-width: 768px) {
+      margin-left: 75px;
+    }
   }
   textarea {
     font-family: MuseoSlab;
   }
 
-  .button {
+  .buttonForm {
     height: 70px;
     width: 180px;
   }
@@ -149,14 +187,29 @@ const FormContainer = styled.div`
     position: relative;
     display: inline-block;
     text-align: center;
+    margin-right: 50px;
+
+    @media (max-width: 768px) {
+      margin-left: 65px;
+    }
   }
 
-  .texto-encima {
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .texto-encimaForm {
     font-family: MuseoSlab;
     color: white;
     font-size: 25px;
     position: absolute;
     top: 16px;
     left: 36.5px;
+
+    @media (max-width: 768px) {
+      margin-left: 8px;
+    }
   }
 `;

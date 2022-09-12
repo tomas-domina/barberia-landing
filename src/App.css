@@ -13,5 +13,41 @@ a {
 
 * {
   box-sizing: border-box;
+  
 }
 
+.whatsapp-container{
+  position: absolute;
+ 
+}
+
+.whatsapp {
+
+
+
+  height: 140px;
+  width: 100px;
+  margin-left: 1400px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 600px;
+  
+
+  
+}
+
+@media (min-width: 3072px) {
+  .whatsapp {
+    margin-top: 1820px;
+    margin-left: 2900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp {
+    display: none;
+  }
+}

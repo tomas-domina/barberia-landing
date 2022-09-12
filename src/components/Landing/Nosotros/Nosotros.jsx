@@ -1,23 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-import nosotrosImg from "../images/team-2.jpg";
-import bgImage3 from "../images/fondo-3.png";
+import nosotrosImg from "../../../images/team-2.jpg";
+import bgImage3 from "../../../images/fondo-3.png";
+import bgMobile3 from "../../../images/fondo-mobile-3.png";
 
 const Nosotros = () => {
   return (
-    <NosContainer>
+    <NosContainer id="nosotros">
       <div className="container">
         <div>
-          <img src={nosotrosImg} alt="nosotros" />
+          <img className="nosotrosImg" src={nosotrosImg} alt="nosotros" />
         </div>
         <div className="text-container">
           <div className="title-container">
-            <h4>SOBRE</h4>
-            <h1>Nosotros</h1>
+            <h4 className="sobre">SOBRE</h4>
+            <h1 className="nosotros">Nosotros</h1>
           </div>
           <div>
-            <p>
+            <p className="nosotrosDesc">
               Lorem ipsum dolor, sit amet <br /> consectetur adipisicing elit.{" "}
               <br /> Nobis consequatur aperiam <br /> molestias
             </p>
@@ -32,7 +33,8 @@ export default Nosotros;
 
 const NosContainer = styled.div`
   max-height: 45rem;
-  max-width: 100%;
+  heigth: 600px;
+
   padding: 0;
   background-image: url(${bgImage3});
   background-repeat: no-repeat;
@@ -43,46 +45,70 @@ const NosContainer = styled.div`
     background-size: 192rem;
   }
 
-  heigth: 600px;
+  @media (max-width: 768px) {
+    background-image: url(${bgMobile3})
+    background-size: 30rem;
+    overflow: hidden;
+  }
+
 
   .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
-  img {
+  .nosotrosImg {
     padding: 50px;
     max-height: 500px;
+    @media (max-width: 768px) {
+      max-height: 400px;
+      
+    }
   }
 
-  h4,
-  h1 {
+  .sobre,
+  .nosotros {
     margin: 0 auto;
+    
   }
 
-  h4 {
+  .sobre {
     font-family: MuseoSlab;
     font-weight: 300;
     font-size: 1.6rem;
     color: #ae862a;
     margin-right: 150px;
+    @media (max-width: 768px) {
+      font-size:  1.3rem;
+    }
   }
 
-  h1 {
+  .nosotros {
     font-family: ShadedLarch;
     font-size: 5rem;
     font-weight: 300;
     color: white;
+    @media (max-width: 768px) {
+      font-size:  4rem;
+    }
   }
 
-  p {
+  .nosotrosDesc {
     font-family: MuseoSlab;
     color: white;
     font-weight: 300;
     font-size: 25px;
     margin-bottom: 25px;
+
+    @media (max-width: 768px) {
+      font-size:  20px;
+    }
   }
 
   .text-container {
@@ -90,5 +116,9 @@ const NosContainer = styled.div`
     margin-top: 150px;
     margin-right: 100px;
     margin-bottom: 275px;
+
+    @media (max-width: 768px) {
+      margin-top: -20px;
+    }
   }
 `;

@@ -1,19 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-import button from "../images/Boton.png";
-import bgImage4 from "../images/ffondo-4.png";
+import button from "../../../images/Boton.png";
+import bgImage4 from "../../../images/ffondo-4.png";
+import bgMobile4 from "../../../images/fondo-mobile-4.png";
 
 const Membresia = () => {
   return (
-    <MembresiaContainer>
+    <MembresiaContainer id="turnos-y-membresias">
       <div className="text-container">
-        <h4>Contratá nuestra</h4>
-        <h1>Membresía</h1>
+        <h4 className="contrataNuestra">Contratá nuestra</h4>
+        <h1 className="membresia">Membresía</h1>
       </div>
       <div className="button-container">
         <a href="">
-          <img src={button} alt="obtener" />
+          <img className="membresiaImg" src={button} alt="obtener" />
           <div className="texto-encima">Obtener</div>
         </a>
       </div>
@@ -39,14 +40,20 @@ const MembresiaContainer = styled.div`
     background-size: 192rem;
   }
 
-  img {
+  @media (max-width: 768px) {
+    background-image: url(${bgMobile4});
+    background-size: 30rem;
+    overflow: hidden;
+  }
+
+  .membresiaImg {
     margin-top: 10px;
     margin-bottom: 200px;
     margin-left: 275px;
   }
 
-  h1,
-  h4 {
+  .membresia,
+  .contrataNuestra {
     margin: 0 auto;
     margin-right: 1000px;
     display: flex;
@@ -54,31 +61,48 @@ const MembresiaContainer = styled.div`
     align-items: center;
   }
 
-  h4 {
+  .contrataNuestra {
     font-family: MuseoSlab;
     font-weight: 300;
     font-size: 2rem;
     margin-right: 66rem;
     color: #ae862a;
     margin-right: -245px;
+
+    @media (max-width: 768px) {
+      font-size: 1.75rem;
+    }
   }
 
-  h1 {
+  .membresia {
     font-family: ShadedLarch;
     font-size: 6rem;
     font-weight: 300;
     color: white;
     margin-right: -350px;
+
+    @media (max-width: 768px) {
+      font-size: 5rem;
+    }
   }
 
   .text-container {
     margin-top: 175px;
     // margin-left: 1350px;
+
+    @media (max-width: 768px) {
+      margin-right: 350px;
+      margin-top: 100px;
+    }
   }
   .button-container {
     position: relative;
     display: inline-block;
     text-align: center;
+
+    @media (max-width: 768px) {
+      margin-right: 300px;
+    }
   }
   .texto-encima {
     font-family: MuseoSlab;

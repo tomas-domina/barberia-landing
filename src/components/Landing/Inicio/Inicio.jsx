@@ -1,18 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-import banner from "../images/img-banner.png";
-import button from "../images/Boton.png";
-import bgImage1 from "../images/fondo-1.png";
+import banner from "../../../images/img-banner.png";
+import button from "../../../images/Boton.png";
+import bgImage1 from "../../../images/fondo-1.png";
+import bgMobile1 from "../../../images/fondo-mobile-1.png";
 
 const Inicio = ({ title1, title2 }) => {
   return (
     <TilteContainer>
       <div className="container">
         <div>
-          <h4 className="title1">{title1}</h4>
-          <h1 className="title2">{title2}</h1>
-          <img className="banner" src={banner} alt="banner" />
+          <div>
+            <h4 className="title1">{title1}</h4>
+            <h1 className="title2">{title2}</h1>
+          </div>
+          <div>
+            <img className="banner" src={banner} alt="banner" />
+          </div>
         </div>
 
         <a href="">
@@ -44,10 +49,24 @@ const TilteContainer = styled.div`
     background-size: 192rem;
   }
 
+  @media (max-width: 768px) {
+    background-image: url(${bgMobile1});
+    background-size: 30rem;
+    overflow: hidden;
+  }
+
   .banner {
     height: 450px;
-    margin-left: 300px;
+    margin-left: 200px;
     margin-bottom: 300px;
+
+    @media (max-width: 768px) {
+      height: 300px;
+
+      margin-left: 50px;
+      margin-top: 50px;
+      margin-bottom: 600px;
+    }
   }
 
   .title1,
@@ -59,6 +78,12 @@ const TilteContainer = styled.div`
     align-items: center;
     margin-top: 400px;
     margin-bottom: -175px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+
+      margin-right: -300px;
+    }
   }
 
   .title1 {
@@ -68,11 +93,21 @@ const TilteContainer = styled.div`
     margin-right: 66rem;
     margin-top: 400px;
     margin-bottom: -400px;
+
+    @media (max-width: 768px) {
+      margin-right: 5rem;
+      margin-top: 800px;
+    }
   }
   .title2 {
     font-family: ShadedLarch;
     font-size: 4rem;
     font-weight: 300;
+
+    @media (max-width: 768px) {
+      margin-right: 2rem;
+      margin-top: 400px;
+    }
   }
 
   .container {
@@ -86,8 +121,13 @@ const TilteContainer = styled.div`
     color: white;
     font-size: 30px;
     position: absolute;
-    top: 518px;
-    left: 43px;
+    top: 522px;
+    left: 41px;
+    @media (max-width: 768px) {
+      font-size: 25px;
+      left: 172px;
+      top: 904px;
+    }
   }
   .button {
     height: 95px;
@@ -95,5 +135,12 @@ const TilteContainer = styled.div`
     margin-top: -700px;
     margin-right: 900px;
     margin-left: -120px;
+
+    @media (max-width: 768px) {
+      height: 70px;
+      margin-right: -10px;
+      margin-top: -1000px;
+      margin-bottom: 910px;
+    }
   }
 `;
